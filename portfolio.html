@@ -15,23 +15,23 @@
 <body class="body">
   <header class="header">
     <div class="container">
-      <nav class="header-box">
-        <a class="header-logo" href="./"><span class="web">Web</span><span class="studio">Studio</span></a>
-        <ul class="header-nav">
-          <li><a class="nav-button" href="">Студия</a></li>
-          <li><a class="nav-button" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="nav-button" href="">Контакты</a></li>
-        </ul>      
+      <nav class="header__box"> 
+        <a class="logo header__logo" href="./"><span class="web">Web</span><span class="studio">Studio</span></a>
+        <ul class="header__nav">
+          <li class="header__button-area"><a class="header__button" href="">Студия</a></li>
+          <li class="header__button-area"><a class="header__button" href="./portfolio.html">Портфолио</a></li>
+          <li class="header__button-area"><a class="header__button" href="">Контакты</a></li>
+        </ul>     
   <!-- header-link -->
-        <ul class="header-link">
-          <li class="link-item"><a class="mail" href="mailto:info@devstudio.com">
-            <svg class="icon">
+        <ul class="link header__link">
+          <li class="link__item"><a class="header__mail" href="mailto:info@devstudio.com">
+            <svg class="mail__icon">
               <use href="./images/sprite.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com</a>
           </li>
-          <li class="link-item"><a class="tel" href="tel:+380961111111">
-            <svg class="icon">
+          <li class="link__item"><a class="header__tel" href="tel:+380961111111">
+            <svg class="tel__icon">
               <use href="./images/sprite.svg#icon-smartphone"></use>
             </svg>
             +38 096 111 11 11</a>
@@ -47,12 +47,12 @@
       <div class="container">
         <!-- button -->
         <nav>
-          <ul class="main-button">
-            <li><button class="btn-all" type="button">Все</button></li>
-            <li><button class="btn-web" type="button">Веб-сайты</button></li>
-            <li><button class="btn-apps" type="button">Приложения</button></li>
-            <li><button class="btn-design" type="button">Дизайн</button></li>
-            <li><button class="btn-marketing" type="button">Маркетинг</button></li>
+          <ul class="main__box">
+            <li class="main__button"><button type="button">Все</button></li>
+            <li class="main__button"><button type="button">Веб-сайты</button></li>
+            <li class="main__button"><button type="button">Приложения</button></li>
+            <li class="main__button"><button type="button">Дизайн</button></li>
+            <li class="main__button"><button type="button">Маркетинг</button></li>
           </ul>
         </nav>
       </div>
@@ -61,112 +61,112 @@
     <section class="mosaic">
       <h2 hidden>Плитки</h2>
       <div class="container">
-        <ul class="mosaic-tile">
-          <li class="mosaic-component">
-            <a href="" class="mosaic-link"> 
-            <div class="mosaic-photo">
-              <img src="./images/portfolio/img1.jpg" alt="Ультрабук" width="370" height="294" />
-              <p class="mosaic-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+        <ul class="mosaic__box">
+          <li class="mosaic__component">
+            <a href="" class="mosaic__link"> 
+            <div class="mosaic__image">
+              <img class="mosaic__poster" src="./images/portfolio/img1.jpg" alt="Ультрабук" width="370" height="294" />
+              <p class="mosaic__banner">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
-            <div class="mosaic-text">
-              <h3>Технокряк</h3>
-              <p>Веб-сайт</p>
-            </div>
-          </a>
-          </li>
-          <li class="mosaic-component">
-            <a href="" class="mosaic-link">
-            <div class="mosaic-photo"> 
-              <img src="./images/portfolio/img2.jpg" alt="Постер" width="370" height="294" />
-              <p class="mosaic-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-            </div>
-            <div class="mosaic-text">
-              <h3>Постер New Orlean vs Golden Star</h3>
-              <p>Дизайн</p>
+            <div class="mosaic__inscription">
+              <h3 class="mosaic__title">Технокряк</h3>
+              <p class="mosaic__subtitle">Веб-сайт</p>
             </div>
           </a>
           </li>
-          <li class="mosaic-component">
-            <a href="" class="mosaic-link">
-            <div class="mosaic-photo">
-              <img src="./images/portfolio/img3.jpg" alt="Лого ресторан Sea food" width="370" height="294" />
-              <p class="mosaic-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+          <li class="mosaic__component">
+            <a href="" class="mosaic__link">
+            <div class="mosaic__image"> 
+              <img class="mosaic__poster" src="./images/portfolio/img2.jpg" alt="Постер" width="370" height="294" />
+              <p class="mosaic__banner">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
-            <div class="mosaic-text">
-              <h3>Ресторан Seafood</h3>
-              <p>Приложение</p>
-            </div>
-          </a>
-          </li>
-          <li class="mosaic-component">
-            <a href="" class="mosaic-link">
-            <div class="mosaic-photo">
-              <img src="./images/portfolio/img4.jpg" alt="Накладные наушники" width="370" height="294" />
-              <p class="mosaic-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-            </div>
-            <div class="mosaic-text">
-              <h3>Проект Prime</h3>
-              <p>Маркетинг</p>
+            <div class="mosaic__inscription">
+              <h3 class="mosaic__title">Постер New Orlean vs Golden Star</h3>
+              <p class="mosaic__subtitle">Дизайн</p>
             </div>
           </a>
           </li>
-          <li class="mosaic-component">
-            <a href="" class="mosaic-link">
-            <div class="mosaic-photo">
-              <img src="./images/portfolio/img5.jpg" alt="Коробки" width="370" height="294" />
-              <p class="mosaic-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+          <li class="mosaic__component">
+            <a href="" class="mosaic__link">
+            <div class="mosaic__image">
+              <img class="mosaic__poster" src="./images/portfolio/img3.jpg" alt="Лого ресторан Sea food" width="370" height="294" />
+              <p class="mosaic__banner">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
-            <div class="mosaic-text">
-              <h3>Проект Boxes</h3>
-              <p>Приложение</p>
-            </div>
-          </a>
-          </li>
-          <li class="mosaic-component">
-            <a href="" class="mosaic-link">
-            <div class="mosaic-photo">
-              <img src="./images/portfolio/img6.jpg" alt="Компьютер iMac" width="370" height="294" />
-              <p class="mosaic-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-            </div>
-            <div class="mosaic-text">
-              <h3>Inspiration has no Borders</h3>
-              <p>Веб-сайт</p>
+            <div class="mosaic__inscription">
+              <h3 class="mosaic__title">Ресторан Seafood</h3>
+              <p class="mosaic__subtitle">Приложение</p>
             </div>
           </a>
           </li>
-          <li class="mosaic-component">
-            <a href="" class="mosaic-link">
-            <div class="mosaic-photo">
-              <img src="./images/portfolio/img7.jpg" alt="Открытая книга" width="370" height="294" />
-              <p class="mosaic-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+          <li class="mosaic__component">
+            <a href="" class="mosaic__link">
+            <div class="mosaic__image">
+              <img class="mosaic__poster" src="./images/portfolio/img4.jpg" alt="Накладные наушники" width="370" height="294" />
+              <p class="mosaic__banner">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
-            <div class="mosaic-text">
-              <h3>Издание Limited Edition</h3>
-              <p>Дизайн</p>
-            </div>
-          </a>
-          </li>
-          <li class="mosaic-component">
-            <a href="" class="mosaic-link">
-            <div class="mosaic-photo">
-              <img src="./images/portfolio/img8.jpg" alt="Реклама проект LAB" width="370" height="294" />
-              <p class="mosaic-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-            </div>
-            <div class="mosaic-text">
-              <h3>Проект LAB</h3>
-              <p>Маркетинг</p>
+            <div class="mosaic__inscription">
+              <h3 class="mosaic__title">Проект Prime</h3>
+              <p class="mosaic__subtitle">Маркетинг</p>
             </div>
           </a>
           </li>
-          <li class="mosaic-component">
-            <a href="" class="mosaic-link">
-            <div class="mosaic-photo">
-              <img src="./images/portfolio/img9.jpg" alt="Интернет страница на ноутбуке" width="370" height="294" />
-              <p class="mosaic-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+          <li class="mosaic__component">
+            <a href="" class="mosaic__link">
+            <div class="mosaic__image">
+              <img class="mosaic__poster" src="./images/portfolio/img5.jpg" alt="Коробки" width="370" height="294" />
+              <p class="mosaic__banner">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
-            <div class="mosaic-text">
-              <h3>Growing Business</h3>
-              <p>Приложение</p>
+            <div class="mosaic__inscription">
+              <h3 class="mosaic__title">Проект Boxes</h3>
+              <p class="mosaic__subtitle">Приложение</p>
+            </div>
+          </a>
+          </li>
+          <li class="mosaic__component">
+            <a href="" class="mosaic__link">
+            <div class="mosaic__image">
+              <img class="mosaic__poster" src="./images/portfolio/img6.jpg" alt="Компьютер iMac" width="370" height="294" />
+              <p class="mosaic__banner">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+            </div>
+            <div class="mosaic__inscription">
+              <h3 class="mosaic__title">Inspiration has no Borders</h3>
+              <p class="mosaic__subtitle">Веб-сайт</p>
+            </div>
+          </a>
+          </li>
+          <li class="mosaic__component">
+            <a href="" class="mosaic__link">
+            <div class="mosaic__image">
+              <img class="mosaic__poster" src="./images/portfolio/img7.jpg" alt="Открытая книга" width="370" height="294" />
+              <p class="mosaic__banner">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+            </div>
+            <div class="mosaic__inscription">
+              <h3 class="mosaic__title">Издание Limited Edition</h3>
+              <p class="mosaic__subtitle">Дизайн</p>
+            </div>
+          </a>
+          </li>
+          <li class="mosaic__component">
+            <a href="" class="mosaic__link">
+            <div class="mosaic__image">
+              <img class="mosaic__poster" src="./images/portfolio/img8.jpg" alt="Реклама проект LAB" width="370" height="294" />
+              <p class="mosaic__banner">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+            </div>
+            <div class="mosaic__inscription">
+              <h3 class="mosaic__title">Проект LAB</h3>
+              <p class="mosaic__subtitle">Маркетинг</p>
+            </div>
+          </a>
+          </li>
+          <li class="mosaic__component">
+            <a href="" class="mosaic__link">
+            <div class="mosaic__image">
+              <img class="mosaic__poster" src="./images/portfolio/img9.jpg" alt="Интернет страница на ноутбуке" width="370" height="294" />
+              <p class="mosaic__banner">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+            </div>
+            <div class="mosaic__inscription">
+              <h3 class="mosaic__title">Growing Business</h3>
+              <p class="mosaic__subtitle">Приложение</p>
             </div>
           </a>
           </li>
@@ -175,66 +175,70 @@
     </section>
   </main>
  <!-- footer -->
-  <div class="footer-box">
-    <div class="container">
-      <footer class="footer">
-            <section class="footer-info-block">
-          <a class="footer-logo" href="./"><span class="web">Web</span><span class="studio">Studio</span></a>
-          <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
-          <ul class="footer-link">
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-          </ul>
-        </section>   
-        <section class="footer-social-block">
-          <h3 class="join">Присоединяйтесь</h3> 
-          <ul class="footer-social">
-            <li class="footer-social-item">
-              <a href="" class="footer-social-link" target="_blank" rel="noopener noreferrer">
-                <svg class="icon">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a href="" class="footer-social-link" target="_blank" rel="noopener noreferrer">
-                <svg class="icon">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a href="" class="footer-social-link" target="_blank" rel="noopener noreferrer">
-                <svg class="icon">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a href="" class="footer-social-link" target="_blank" rel="noopener noreferrer">
-                <svg class="icon">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </section>
-      <!-- subscribe -->
-      <section class="footer-subcribe-block">
-        <h3 class="subscribe">Подпишитесь на рассылку</h3>
-       <form>
-         <label for="mail" class="subscribe-label">
-           <input type="email" name="mail" id="mail" class="mail-window" placeholder="E-mail"/>
-         <button type="submit" class="subscribe-button">Подписаться
-           <svg class="icon">
-             <use href="./images/sprite.svg#icon-send"></use>
-           </svg>
-         </button>
-       </form>
+ <div class="footer">
+  <div class="container">
+    <footer class="footer__box">
+      <!-- info -->
+      <section class="footer__info-area">
+        <h3 hidden >Контактные данные</h3>
+        <a class="logo footer__logo" href="./"><span class="web">Web</span><span class="studio">Studio</span></a>
+        <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
+        <ul class="footer__link">
+          <li><a class="footer__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="footer__tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+      </section> 
+      <!-- social -->  
+        <section class="footer__social-area">
+          <h3 class="social__title">Присоединяйтесь</h3> 
+        <ul class="social footer__social">
+          <li class="social__item">
+            <a href="" class="social__link footer__social-link" target="_blank" rel="noopener noreferrer">
+              <svg class="social__icon footer__social-icon">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link footer__social-link" target="_blank" rel="noopener noreferrer">
+              <svg class="social__icon footer__social-icon">
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link footer__social-link" target="_blank" rel="noopener noreferrer">
+              <svg class="social__icon footer__social-icon">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link footer__social-link" target="_blank" rel="noopener noreferrer">
+              <svg class="social__icon footer__social-icon">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </section>
-      </footer>
-    </div>
-   </div>
+    <!-- subscribe -->
+     <section class="footer__subcribe-area">
+       <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
+      <form>
+        <label for="mail" class="subscribe__label">
+          <input type="email" name="mail" id="mail" class="subscribe__frame" placeholder="E-mail"/>
+        <button type="submit" class="subscribe__button">Подписаться
+          <svg class="subscribe__icon">
+            <use href="./images/sprite.svg#icon-send"></use>
+          </svg>
+        </button>
+        </label>
+      </form>
+     </section>
+    </footer>
+  </div>
+ </div>
 
    <script>
     (() => {

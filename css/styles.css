@@ -279,14 +279,126 @@ button:focus {
 }
 
 .logo__web {
-  color: #2196f3;
+  color: var(--active-text-color);
 }
 
 .logo__studio {
-  color: #212121;
+  color: var(--main-text-color);
 }
 
-/* header */
+.mosaic__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.mosaic__component {
+  padding-left: 30px;
+}
+
+.mosaic__component:nth-child(3n+1) {
+  padding-left: 0px;
+}
+
+.mosaic__component:nth-last-child(-n+3) {
+  margin-bottom: 94px;
+}
+
+.mosaic__component:nth-child(-n+6) {
+  margin-bottom: 30px;
+}
+
+.mosaic__link {
+  display: block;
+}
+
+.mosaic__link:hover,
+.mosaic__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.mosaic__link:hover .mosaic__banner,
+.mosaic__link:focus .mosaic__banner {
+  transition: transform 1100ms cubic-bezier(0.52, 0.21, 0.44, 0.86);
+  transform: translateX(0);
+}
+
+.mosaic__image {
+  position: relative;
+  overflow: hidden;
+}
+
+.mosaic__poster {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.mosaic__banner {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 370px;
+  height: 294px;
+  top: 0;
+  left: 0;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform 1100ms cubic-bezier(0.52, 0.21, 0.44, 0.86);
+  transform: translateX(-100%);
+}
+
+.mosaic__inscription {
+  display: block;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.mosaic__title {
+  color: var(--main-text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.mosaic__subtitle {
+  color: var(--second-text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -417,8 +529,6 @@ button:focus {
   stroke: var(--active-text-color);
 }
 
-/* header end */
-/* hero */
 .hero {
   display: flex;
   margin-left: auto;
@@ -486,8 +596,6 @@ button:focus {
   border: none;
 }
 
-/* hero end */
-/* features */
 .features {
   background-color: var(--white-color);
 }
@@ -556,8 +664,6 @@ button:focus {
   height: 70px;
 }
 
-/* features end */
-/* activity */
 .activity {
   background-color: var(--white-color);
 }
@@ -623,8 +729,6 @@ button:focus {
   padding-bottom: 27px;
 }
 
-/* activity end */
-/* team */
 .team {
   display: block;
   background-color: var(--background-button-color);
@@ -700,8 +804,6 @@ button:focus {
   color: var(--second-text-color);
 }
 
-/* team end */
-/* clients */
 .clients__title {
   color: var(--main-text-color);
   font-family: "Roboto", sans-serif;
@@ -767,8 +869,6 @@ button:focus {
   border-radius: 4px;
 } 
 */
-/* clients end */
-/* main */
 .main {
   display: block;
   margin-top: 0px;
@@ -796,122 +896,6 @@ button:focus {
   margin-left: 8px;
 }
 
-/* mosaic */
-.mosaic__box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.mosaic__component {
-  padding-left: 30px;
-}
-
-.mosaic__component:nth-child(3n+1) {
-  padding-left: 0px;
-}
-
-.mosaic__component:nth-last-child(-n+3) {
-  margin-bottom: 94px;
-}
-
-.mosaic__component:nth-child(-n+6) {
-  margin-bottom: 30px;
-}
-
-.mosaic__link {
-  display: block;
-}
-
-.mosaic__link:hover,
-.mosaic__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.mosaic__link:hover .mosaic__banner,
-.mosaic__link:focus .mosaic__banner {
-  transition: transform 1100ms cubic-bezier(0.52, 0.21, 0.44, 0.86);
-  transform: translateX(0);
-}
-
-.mosaic__image {
-  position: relative;
-  overflow: hidden;
-}
-
-.mosaic__poster {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.mosaic__banner {
-  position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 370px;
-  height: 294px;
-  top: 0;
-  left: 0;
-  padding-bottom: 20px;
-  padding-right: 24px;
-  padding-left: 24px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
-  color: var(--white-color);
-  background-color: rgba(33, 150, 243, 0.9);
-  transition: transform 1100ms cubic-bezier(0.52, 0.21, 0.44, 0.86);
-  transform: translateX(-100%);
-}
-
-.mosaic__inscription {
-  display: block;
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-}
-
-.mosaic__title {
-  color: var(--main-text-color);
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  padding-top: 20px;
-  padding-bottom: 4px;
-  padding-right: 24px;
-  padding-left: 24px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.mosaic__subtitle {
-  color: var(--second-text-color);
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  padding-bottom: 20px;
-  padding-right: 24px;
-  padding-left: 24px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-/* mosaic end */
-/* footer */
 .footer {
   width: 100%;
   position: absolute;
@@ -1083,8 +1067,6 @@ button:focus {
   right: 28px;
 }
 
-/* footer end */
-/* backdrop */
 .backdrop.is-hidden {
   opacity: 0;
   /*  visibility: hidden;  */
@@ -1103,8 +1085,6 @@ button:focus {
   height: 100%;
 }
 
-/* backdrop end */
-/* modal */
 .is-hidden .modal {
   transform: translate(-20%, -50%);
 }
@@ -1348,6 +1328,4 @@ button:focus {
   background-size: contain;
   background-origin: border-box;
   background-repeat: no-repeat;
-}
-
-/* modal end *//*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

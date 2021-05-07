@@ -9,7 +9,6 @@
   background-color: var(--background-footer-color);
 }
 
-/* footer info area */
 .footer__info-area {
   display: inline-block;
   flex-basis: calc((50% - 45px) / 2);
@@ -31,7 +30,6 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  /* or 171% */
   letter-spacing: 0.03em;
 }
 
@@ -60,8 +58,6 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
-/* footer social area */
 
 .footer__social-area {
   display: inline-block;
@@ -104,8 +100,6 @@
 .footer__social-icon {
   fill: var(--white-color);
 }
-
-/* footer subscribe area */
 
 .footer__subscribe-area {
   display: flex;

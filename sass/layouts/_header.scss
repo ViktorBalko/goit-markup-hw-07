@@ -16,6 +16,22 @@
   margin-left: auto;
 }
 
+.header__button {
+  color: var(--main-text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &:hover,
+  &:focus {
+    color: var(--active-text-color);
+  }
+}
+
 .header__button::after {
   position: relative;
   top: 28px;
@@ -46,28 +62,12 @@
   margin-bottom: 0px;
 }
 
-.header__button {
-  color: var(--main-text-color);
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .header__button-area + .header__button-area {
   margin-left: 50px;
 }
 
 .header__button-area:first-child {
   margin-left: 0px;
-}
-
-.header__button:hover,
-.header__button:focus {
-  color: var(--active-text-color);
 }
 
 .header__link {
@@ -81,27 +81,20 @@
   margin-left: 27px;
 }
 
-.header__mail,
-.header__tel {
+.header__mail {
   display: inline-flex;
   align-items: center;
-}
-
-.header__mail,
-.header__tel {
   color: var(--second-text-color);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
 
-.header__mail:hover,
-.header__tel:hover,
-.header__mail:focus,
-.header__tel:focus {
-  color: var(--active-text-color);
+  &:hover,
+  &:focus {
+    color: var(--active-text-color);
+  }
 }
 
 .header__mail-icon {
@@ -109,6 +102,27 @@
   height: 16px;
   stroke: var(--second-text-color);
   margin-right: 10px;
+
+  .header__mail:hover &,
+  .header__mail:focus & {
+    stroke: var(--active-text-color);
+  }
+}
+
+.header__tel {
+  display: inline-flex;
+  align-items: center;
+  color: var(--second-text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: var(--active-text-color);
+  }
 }
 
 .header__tel-icon {
@@ -116,14 +130,9 @@
   height: 16px;
   stroke: var(--second-text-color);
   margin-right: 7px;
-}
 
-.header__mail:hover .header__mail-icon,
-.header__mail:focus .header__mail-icon {
-  stroke: var(--active-text-color);
-}
-
-.header__tel:hover .header__tel-icon,
-.header__tel:focus .header__tel-icon {
-  stroke: var(--active-text-color);
+  .header__tel:hover &,
+  .header__tel:focus & {
+    stroke: var(--active-text-color);
+  }
 }

@@ -1,13 +1,11 @@
 @import "./vendors/modern-normalize";
+@import "./base/container";
 @import "./base/fonts";
 @import "./base/common";
 @import "./utils/variables";
-@import "./base/container";
 @import "./components/button";
-@import "./components/social-link";
-@import "./components/social-icon";
+@import "./components/social";
 @import "./components/logo";
-@import "./layouts/mosaic";
 @import "./layouts/header";
 @import "./layouts/hero";
 @import "./layouts/features";
@@ -15,6 +13,8 @@
 @import "./layouts/team";
 @import "./layouts/clients";
 @import "./layouts/main";
+@import "./layouts/mosaic";
 @import "./layouts/footer";
 @import "./layouts/backdrop";
 @import "./layouts/modal";
+@import "./components/checkbox";

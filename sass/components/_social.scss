@@ -23,3 +23,14 @@
   padding-left: 10px;
   margin-left: 0px;
 }
+
+.social__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-icon-color);
+}
+
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  fill: var(--white-color);
+}
